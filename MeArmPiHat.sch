@@ -52,6 +52,7 @@ F 0 "ART3" H 6250 7625 60  0001 C CNN
 F 1 "LOGO" H 6250 7225 60  0001 C CNN
 F 2 "Custom:MIME_LOGO" H 6250 7375 60  0001 C CNN
 F 3 "" H 6250 7375 60  0000 C CNN
+F 4 "n" H 6250 7375 60  0001 C CNN "Required"
 	1    6250 7375
 	1    0    0    -1  
 $EndComp
@@ -61,8 +62,9 @@ U 1 1 57D2D6F7
 P 5275 7375
 F 0 "ART2" H 5275 7625 60  0001 C CNN
 F 1 "LOGO" H 5275 7225 60  0001 C CNN
-F 2 "Custom:MEARM_LOGO" H 5275 7375 60  0001 C CNN
+F 2 "Custom:MEARM_LOGO_NEW_LARGE" H 5275 7375 60  0001 C CNN
 F 3 "" H 5275 7375 60  0000 C CNN
+F 4 "n" H 5275 7375 60  0001 C CNN "Required"
 	1    5275 7375
 	1    0    0    -1  
 $EndComp
@@ -74,6 +76,7 @@ F 0 "ART1" H 4150 7500 60  0001 C CNN
 F 1 "OSHW-LOGO" H 4150 7150 60  0001 C CNN
 F 2 "Custom:OSHW_LOGO" H 4150 7325 60  0001 C CNN
 F 3 "" H 4150 7325 60  0000 C CNN
+F 4 "n" H 4150 7325 60  0001 C CNN "Required"
 	1    4150 7325
 	1    0    0    -1  
 $EndComp
@@ -84,7 +87,15 @@ P 9450 3700
 F 0 "U1" H 9600 4050 50  0000 C CNN
 F 1 "24C16" H 9650 3350 50  0000 C CNN
 F 2 "SMD_Packages:SOIC-8-N" H 9450 3700 50  0001 C CNN
-F 3 "" H 9450 3700 50  0000 C CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/121e/0900766b8121eacf.pdf" H 9450 3700 50  0001 C CNN
+F 4 "32 kbit I2C EEPROM" H 9450 3700 60  0001 C CNN "Description"
+F 5 "SOIC8" H 9450 3700 60  0001 C CNN "Package ID"
+F 6 "ON Semi" H 9450 3700 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "CAT24C32WI" H 9450 3700 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "https://uk.rs-online.com/web/p/eeprom-memory-chips/7814828/" H 9450 3700 60  0001 C CNN "Source1"
+F 9 "https://www.aliexpress.com/item/AT24C32-24C32-24C32N-24C32AN-EEPROM-SOP8/32787470164.html" H 9450 3700 60  0001 C CNN "Source2"
+F 10 "Alternate manufacturer may be used (requires checking)" H 9450 3700 60  0001 C CNN "Notes"
+F 11 "y" H 9450 3700 60  0001 C CNN "Required"
 	1    9450 3700
 	-1   0    0    1   
 $EndComp
@@ -96,6 +107,9 @@ F 0 "P1" H 2500 3875 50  0000 C CNN
 F 1 "CONN_02X03" H 2500 3475 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 2500 2475 50  0001 C CNN
 F 3 "" H 2500 2475 50  0000 C CNN
+F 4 "02x03 Shrouded IDC Header" H 5750 2850 60  0001 C CNN "Description"
+F 5 "https://www.aliexpress.com/item/1000-Pcs-x-4-models-Shrouded-Box-header-IDC-Socket-2-54mm-2x5-Pin-2x8P-2x3/32707122154.html" H 5750 2850 60  0001 C CNN "Source1"
+F 6 "y" H 5750 2850 60  0001 C CNN "Required"
 	1    2500 3675
 	1    0    0    -1  
 $EndComp
@@ -106,7 +120,12 @@ P 6425 3100
 F 0 "P2" H 5325 5050 60  0000 C CNN
 F 1 "Raspberry_Pi_+_Conn" H 6725 1650 60  0000 C CNN
 F 2 "Custom:02x40-SMD-Socket-Flipped" H 6425 3100 60  0001 C CNN
-F 3 "" H 6425 3100 60  0000 C CNN
+F 3 "http://www.toby.co.uk/datasheets/section4/REF-1826xx-0x.pdf?revDate=17112016113443" H 6425 3100 60  0001 C CNN
+F 4 "02x20 SMD Rear Entry Header Socket" H 6425 3100 60  0001 C CNN "Description"
+F 5 "Samtec" H 6425 3100 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "REF-182665-01" H 6425 3100 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 7 "http://www.toby.co.uk/content/catalogue/products.aspx?series=REF-1826xx-0x" H 6425 3100 60  0001 C CNN "Source1"
+F 8 "y" H 6425 3100 60  0001 C CNN "Required"
 	1    6425 3100
 	1    0    0    -1  
 $EndComp
@@ -189,7 +208,9 @@ F 0 "C1" H 9875 4500 50  0000 L CNN
 F 1 "0.1uF" H 9875 4300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 9888 4250 50  0001 C CNN
 F 3 "" H 9850 4400 50  0000 C CNN
-F 4 "y" H 9850 4400 60  0001 C CNN "Required"
+F 4 "0603 SMD Capacitor" H 9850 4400 60  0001 C CNN "Description"
+F 5 "0603" H 9850 4400 60  0001 C CNN "Package ID"
+F 6 "y" H 9850 4400 60  0001 C CNN "Required"
 	1    9850 4400
 	0    1    1    0   
 $EndComp
@@ -201,20 +222,11 @@ F 0 "R2" V 8655 4125 50  0000 C CNN
 F 1 "1k" V 8575 4125 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8505 4125 50  0001 C CNN
 F 3 "" H 8575 4125 50  0000 C CNN
-F 4 "y" H 8575 4125 60  0001 C CNN "Required"
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
+F 6 "y" H 8450 3275 60  0001 C CNN "Required"
 	1    8575 4125
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P3
-U 1 1 57D6B855
-P 8150 4125
-F 0 "P3" H 8150 4275 50  0000 C CNN
-F 1 "CONN_01X02" V 8250 4125 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8150 4125 50  0001 C CNN
-F 3 "" H 8150 4125 50  0000 C CNN
-	1    8150 4125
-	-1   0    0    1   
 $EndComp
 $Comp
 L R R3
@@ -224,7 +236,9 @@ F 0 "R3" V 8730 3275 50  0000 C CNN
 F 1 "3.9k" V 8650 3275 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8580 3275 50  0001 C CNN
 F 3 "" H 8650 3275 50  0000 C CNN
-F 4 "y" H 8650 3275 60  0001 C CNN "Required"
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
+F 6 "y" H 8450 3275 60  0001 C CNN "Required"
 	1    8650 3275
 	1    0    0    -1  
 $EndComp
@@ -236,7 +250,9 @@ F 0 "R1" V 8530 3275 50  0000 C CNN
 F 1 "3.9k" V 8450 3275 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8380 3275 50  0001 C CNN
 F 3 "" H 8450 3275 50  0000 C CNN
-F 4 "y" H 8450 3275 60  0001 C CNN "Required"
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
+F 6 "y" H 8450 3275 60  0001 C CNN "Required"
 	1    8450 3275
 	1    0    0    -1  
 $EndComp
@@ -297,17 +313,6 @@ Text GLabel 4725 2900 0    40   Input ~ 0
 BUTTON1
 Text GLabel 4725 3000 0    40   Input ~ 0
 BUTTON2
-$Comp
-L GND #PWR09
-U 1 1 57D6D172
-P 8350 4325
-F 0 "#PWR09" H 8350 4075 50  0001 C CNN
-F 1 "GND" H 8350 4175 50  0000 C CNN
-F 2 "" H 8350 4325 50  0000 C CNN
-F 3 "" H 8350 4325 50  0000 C CNN
-	1    8350 4325
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4975 1650
 NoConn ~ 4975 1750
 NoConn ~ 4975 2100
@@ -321,7 +326,6 @@ NoConn ~ 4975 3800
 NoConn ~ 4975 4000
 NoConn ~ 4975 4100
 NoConn ~ 4975 4200
-NoConn ~ 4975 4300
 NoConn ~ 4975 4400
 $Comp
 L LED_RCBG D1
@@ -329,16 +333,20 @@ U 1 1 57FB50B1
 P 4950 5700
 F 0 "D1" H 4950 6050 50  0000 C CNN
 F 1 "LED_RCBG" H 4950 5350 50  0000 C CNN
-F 2 "LEDs:LED-RGB-5MM_Common_Cathode" H 4950 5650 50  0001 C CNN
+F 2 "Custom:LED-RGB-5MM_Common_Cathode" H 4950 5650 50  0001 C CNN
 F 3 "" H 4950 5650 50  0000 C CNN
+F 4 "Common Cathode Through Hole Square Package RGB LED" H 4950 5700 60  0001 C CNN "Description"
+F 5 "255" H 4950 5700 60  0001 C CNN "Package ID"
+F 6 "https://www.aliexpress.com/item/50pcs-Rectangular-LEDs-255-Diod-RGB-LED-Diffused-Cathode-Anode-Square-2-5-5mm-Red-Green/32655243116.html" H 4950 5700 60  0001 C CNN "Source1"
+F 7 "y" H 4950 5700 60  0001 C CNN "Required"
 	1    4950 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L GND #PWR09
 U 1 1 57FB51A3
 P 4400 5925
-F 0 "#PWR010" H 4400 5675 50  0001 C CNN
+F 0 "#PWR09" H 4400 5675 50  0001 C CNN
 F 1 "GND" H 4400 5775 50  0000 C CNN
 F 2 "" H 4400 5925 50  0000 C CNN
 F 3 "" H 4400 5925 50  0000 C CNN
@@ -362,9 +370,12 @@ L R R6
 U 1 1 57FB786B
 P 5625 5500
 F 0 "R6" V 5705 5500 50  0000 C CNN
-F 1 "R" V 5625 5500 50  0000 C CNN
+F 1 "250R" V 5625 5500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 5555 5500 50  0001 C CNN
 F 3 "" H 5625 5500 50  0000 C CNN
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
+F 6 "y" H 5625 5500 60  0001 C CNN "Required"
 	1    5625 5500
 	0    1    1    0   
 $EndComp
@@ -373,9 +384,11 @@ L R R7
 U 1 1 57FB7965
 P 5625 5700
 F 0 "R7" V 5705 5700 50  0000 C CNN
-F 1 "R" V 5625 5700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5555 5700 50  0001 C CNN
-F 3 "" H 5625 5700 50  0000 C CNN
+F 1 "250R" V 5625 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5555 5500 50  0001 C CNN
+F 3 "" H 5625 5500 50  0000 C CNN
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
 	1    5625 5700
 	0    1    1    0   
 $EndComp
@@ -384,9 +397,11 @@ L R R8
 U 1 1 57FB79B2
 P 5625 5900
 F 0 "R8" V 5705 5900 50  0000 C CNN
-F 1 "R" V 5625 5900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5555 5900 50  0001 C CNN
-F 3 "" H 5625 5900 50  0000 C CNN
+F 1 "250R" V 5625 5900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5555 5500 50  0001 C CNN
+F 3 "" H 5625 5500 50  0000 C CNN
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
 	1    5625 5900
 	0    1    1    0   
 $EndComp
@@ -398,6 +413,8 @@ F 0 "P5" H 3525 3275 50  0000 C CNN
 F 1 "CONN_01X04" V 3625 3025 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x04" H 3525 3025 50  0001 C CNN
 F 3 "" H 3525 3025 50  0000 C CNN
+F 4 "01x04 Right Angle Pin Header" H 3525 3025 60  0001 C CNN "Description"
+F 5 "y" H 3525 3025 60  0001 C CNN "Required"
 	1    3525 3025
 	-1   0    0    1   
 $EndComp
@@ -479,7 +496,7 @@ Wire Wire Line
 Connection ~ 8825 4400
 Connection ~ 9450 4400
 Wire Wire Line
-	8350 4075 8350 3800
+	8350 3800 8350 4825
 Connection ~ 8575 3800
 Wire Wire Line
 	8450 3425 8450 3500
@@ -537,8 +554,6 @@ Wire Wire Line
 Wire Wire Line
 	8575 4400 9700 4400
 Wire Wire Line
-	8350 4175 8350 4325
-Wire Wire Line
 	4225 1400 4975 1400
 Wire Wire Line
 	4725 2900 4975 2900
@@ -585,10 +600,10 @@ Wire Wire Line
 Wire Wire Line
 	3775 2975 3775 2750
 $Comp
-L GND #PWR011
+L GND #PWR010
 U 1 1 57FBB886
 P 3775 3375
-F 0 "#PWR011" H 3775 3125 50  0001 C CNN
+F 0 "#PWR010" H 3775 3125 50  0001 C CNN
 F 1 "GND" H 3775 3225 50  0000 C CNN
 F 2 "" H 3775 3375 50  0000 C CNN
 F 3 "" H 3775 3375 50  0000 C CNN
@@ -596,14 +611,74 @@ F 3 "" H 3775 3375 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR012
+L +3V3 #PWR011
 U 1 1 57FBB8D0
 P 3775 2750
-F 0 "#PWR012" H 3775 2600 50  0001 C CNN
+F 0 "#PWR011" H 3775 2600 50  0001 C CNN
 F 1 "+3V3" H 3775 2890 50  0000 C CNN
 F 2 "" H 3775 2750 50  0000 C CNN
 F 3 "" H 3775 2750 50  0000 C CNN
 	1    3775 2750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8350 4825 4675 4825
+Wire Wire Line
+	4675 4825 4675 4300
+Wire Wire Line
+	4675 4300 4975 4300
+$Comp
+L R R10
+U 1 1 58C6B762
+P 4625 1075
+F 0 "R10" V 4705 1075 50  0000 C CNN
+F 1 "3.9k" V 4625 1075 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4555 1075 50  0001 C CNN
+F 3 "" H 4625 1075 50  0000 C CNN
+F 4 "0603 SMD Resistor" H 1600 3300 60  0001 C CNN "Description"
+F 5 "0603" H 1600 3300 60  0001 C CNN "Package ID"
+F 6 "y" H 4425 1075 60  0001 C CNN "Required"
+	1    4625 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 58C6B76B
+P 4425 1075
+F 0 "R9" V 4505 1075 50  0000 C CNN
+F 1 "3.9k" V 4425 1075 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4355 1075 50  0001 C CNN
+F 3 "" H 4425 1075 50  0000 C CNN
+F 4 "0603 SMD Resistor" H 1600 3300 60  0001 C CNN "Description"
+F 5 "0603" H 1600 3300 60  0001 C CNN "Package ID"
+F 6 "y" H 4425 1075 60  0001 C CNN "Required"
+	1    4425 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR012
+U 1 1 58C6B771
+P 4525 750
+F 0 "#PWR012" H 4525 600 50  0001 C CNN
+F 1 "+3V3" H 4525 890 50  0000 C CNN
+F 2 "" H 4525 750 50  0000 C CNN
+F 3 "" H 4525 750 50  0000 C CNN
+	1    4525 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 1225 4425 1300
+Wire Wire Line
+	4625 1225 4625 1400
+Wire Wire Line
+	4425 925  4425 825 
+Wire Wire Line
+	4425 825  4625 825 
+Wire Wire Line
+	4625 825  4625 925 
+Wire Wire Line
+	4525 825  4525 750 
+Connection ~ 4525 825 
+Connection ~ 4625 1400
+Connection ~ 4425 1300
 $EndSCHEMATC

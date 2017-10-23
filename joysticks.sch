@@ -51,7 +51,11 @@ P 4125 2750
 F 0 "RV1" H 4285 3060 50  0000 C CNN
 F 1 "DUAL_POT_JOYSTICK" H 4375 3200 50  0000 C CNN
 F 2 "Custom:JOYSTICK" H 4125 2750 50  0001 C CNN
-F 3 "" H 4125 2750 50  0000 C CNN
+F 3 "http://www.rapidonline.com/pdf/425624_da_en_01.pdf" H 4125 2750 50  0001 C CNN
+F 4 "Dual Potentiometer Joystick with Button" H 4125 2750 60  0001 C CNN "Description"
+F 5 "http://www.rapidonline.com/electronic-components/white-label-98002c3-10k-joystick-potentiometer-51-7064" H 4125 2750 60  0001 C CNN "Source1"
+F 6 "http://www.aliexpress.com/item/60pcs-for-Sony-PS-2-Replacement-3D-Analog-Module-Joystick-Axis-for-Microsoft-Xbox-360-Controller/32435114322.html" H 4125 2750 60  0001 C CNN "Source2"
+F 7 "y" H 4125 2750 60  0001 C CNN "Required"
 	1    4125 2750
 	1    0    0    -1  
 $EndComp
@@ -62,7 +66,11 @@ P 4125 4575
 F 0 "RV2" H 4285 4885 50  0000 C CNN
 F 1 "DUAL_POT_JOYSTICK" H 4375 5025 50  0000 C CNN
 F 2 "Custom:JOYSTICK" H 4125 4575 50  0001 C CNN
-F 3 "" H 4125 4575 50  0000 C CNN
+F 3 "http://www.rapidonline.com/pdf/425624_da_en_01.pdf" H 4125 2750 50  0001 C CNN
+F 4 "Dual Potentiometer Joystick with Button" H 4125 2750 60  0001 C CNN "Description"
+F 5 "http://www.rapidonline.com/electronic-components/white-label-98002c3-10k-joystick-potentiometer-51-7064" H 4125 2750 60  0001 C CNN "Source1"
+F 6 "http://www.aliexpress.com/item/60pcs-for-Sony-PS-2-Replacement-3D-Analog-Module-Joystick-Axis-for-Microsoft-Xbox-360-Controller/32435114322.html" H 4125 2750 60  0001 C CNN "Source2"
+F 7 "y" H 4125 2750 60  0001 C CNN "Required"
 	1    4125 4575
 	1    0    0    -1  
 $EndComp
@@ -73,15 +81,21 @@ P 7025 3775
 F 0 "U2" H 6575 4475 50  0000 L CNN
 F 1 "PCF8591" H 7175 4475 50  0000 L CNN
 F 2 "SMD_Packages:SO-16-W" H 7025 3575 50  0001 C CNN
-F 3 "" H 7025 3575 50  0000 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8591.pdf" H 7025 3575 50  0001 C CNN
+F 4 "8-Bit I2C ADC" H 7025 3775 60  0001 C CNN "Description"
+F 5 "SO16" H 7025 3775 60  0001 C CNN "Package ID"
+F 6 "NXP" H 7025 3775 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "PCF8591T" H 7025 3775 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "https://www.aliexpress.com/item/20pcs-lot-PCF8591T/32404198526.html" H 7025 3775 60  0001 C CNN "Source1"
+F 9 "y" H 7025 3775 60  0001 C CNN "Required"
 	1    7025 3775
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR011
+L +3V3 #PWR013
 U 1 1 57D6C4FC
 P 3525 2075
-F 0 "#PWR011" H 3525 1925 50  0001 C CNN
+F 0 "#PWR013" H 3525 1925 50  0001 C CNN
 F 1 "+3V3" H 3525 2215 50  0000 C CNN
 F 2 "" H 3525 2075 50  0000 C CNN
 F 3 "" H 3525 2075 50  0000 C CNN
@@ -103,10 +117,10 @@ Wire Wire Line
 	3525 4675 3975 4675
 Connection ~ 3525 4675
 $Comp
-L GND #PWR012
+L GND #PWR014
 U 1 1 57D6C64C
 P 3725 5700
-F 0 "#PWR012" H 3725 5450 50  0001 C CNN
+F 0 "#PWR014" H 3725 5450 50  0001 C CNN
 F 1 "GND" H 3725 5550 50  0000 C CNN
 F 2 "" H 3725 5700 50  0000 C CNN
 F 3 "" H 3725 5700 50  0000 C CNN
@@ -157,10 +171,10 @@ Wire Wire Line
 Wire Wire Line
 	5450 3575 6425 3575
 $Comp
-L +3V3 #PWR013
+L +3V3 #PWR015
 U 1 1 57D6C842
 P 7025 2750
-F 0 "#PWR013" H 7025 2600 50  0001 C CNN
+F 0 "#PWR015" H 7025 2600 50  0001 C CNN
 F 1 "+3V3" H 7025 2890 50  0000 C CNN
 F 2 "" H 7025 2750 50  0000 C CNN
 F 3 "" H 7025 2750 50  0000 C CNN
@@ -168,10 +182,10 @@ F 3 "" H 7025 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR016
 U 1 1 57D6C8A4
 P 7025 4800
-F 0 "#PWR014" H 7025 4550 50  0001 C CNN
+F 0 "#PWR016" H 7025 4550 50  0001 C CNN
 F 1 "GND" H 7025 4650 50  0000 C CNN
 F 2 "" H 7025 4800 50  0000 C CNN
 F 3 "" H 7025 4800 50  0000 C CNN

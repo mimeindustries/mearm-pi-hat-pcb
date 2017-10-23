@@ -49,9 +49,15 @@ L BSS138 Q1
 U 1 1 57D6B37C
 P 6500 3375
 F 0 "Q1" H 6700 3450 50  0000 L CNN
-F 1 "BSS138" H 6700 3375 50  0000 L CNN
+F 1 "DMG2305" H 6700 3375 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 6700 3300 50  0001 L CIN
-F 3 "" H 6500 3375 50  0000 L CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/1332/0900766b81332207.pdf" H 6500 3375 50  0001 L CNN
+F 4 "P Channel Mosfet" H 6500 3375 60  0001 C CNN "Description"
+F 5 "SOT-23" H 6500 3375 60  0001 C CNN "Package ID"
+F 6 "Diodes Inc" H 6500 3375 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "DMG2305UX-7" H 6500 3375 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "https://uk.rs-online.com/web/p/mosfet-transistors/8270452/" H 6500 3375 60  0001 C CNN "Source1"
+F 9 "y" H 6500 3375 60  0001 C CNN "Required"
 	1    6500 3375
 	0    -1   -1   0   
 $EndComp
@@ -62,7 +68,13 @@ P 6500 4250
 F 0 "U3" H 6200 4400 47  0000 C CNN
 F 1 "DMMT5401" H 6950 4050 47  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 6350 3950 47  0001 C CNN
-F 3 "" H 6350 3950 47  0000 C CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/0e49/0900766b80e49504.pdf" H 6350 3950 47  0001 C CNN
+F 4 "Dual PNP Transistor" H 6500 4250 60  0001 C CNN "Description"
+F 5 "SOT-26" H 6500 4250 60  0001 C CNN "Package ID"
+F 6 "Diodes Inc" H 6500 4250 60  0001 C CNN "Manufacturer Name (MFN)"
+F 7 "DMMT5401-7-F" H 6500 4250 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 8 "https://uk.rs-online.com/web/p/bipolar-transistors/7115049/" H 6500 4250 60  0001 C CNN "Source1"
+F 9 "y" H 6500 4250 60  0001 C CNN "Required"
 	1    6500 4250
 	1    0    0    -1  
 $EndComp
@@ -74,7 +86,9 @@ F 0 "R4" V 6480 5100 50  0000 C CNN
 F 1 "10k" V 6400 5100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 6330 5100 50  0001 C CNN
 F 3 "" H 6400 5100 50  0000 C CNN
-F 4 "y" H 6400 5100 60  0001 C CNN "Required"
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
+F 6 "y" H 8450 3275 60  0001 C CNN "Required"
 	1    6400 5100
 	1    0    0    -1  
 $EndComp
@@ -86,7 +100,9 @@ F 0 "R5" V 6780 5100 50  0000 C CNN
 F 1 "47k" V 6700 5100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 6630 5100 50  0001 C CNN
 F 3 "" H 6700 5100 50  0000 C CNN
-F 4 "y" H 6700 5100 60  0001 C CNN "Required"
+F 4 "0603 SMD Resistor" H 5625 5500 60  0001 C CNN "Description"
+F 5 "0603" H 5625 5500 60  0001 C CNN "Package ID"
+F 6 "y" H 8450 3275 60  0001 C CNN "Required"
 	1    6700 5100
 	1    0    0    -1  
 $EndComp
@@ -210,7 +226,9 @@ F 0 "C2" H 7425 3650 50  0000 L CNN
 F 1 "100uF" H 7425 3450 50  0000 L CNN
 F 2 "Capacitors_Tantalum_SMD:TantalC_SizeB_EIA-3528_Reflow" H 7438 3400 50  0001 C CNN
 F 3 "" H 7400 3550 50  0000 C CNN
-F 4 "y" H 7400 3550 60  0001 C CNN "Required"
+F 4 "Tantalum Capacitor 100uF 6.3V 3.5mm x 2.8mm (3528 - size B)" H 7400 3550 60  0001 C CNN "Description"
+F 5 "3528" H 7400 3550 60  0001 C CNN "Package ID"
+F 6 "y" H 7400 3550 60  0001 C CNN "Required"
 	1    7400 3550
 	1    0    0    -1  
 $EndComp
@@ -318,9 +336,14 @@ U 1 1 57F7A0A1
 P 5075 3475
 F 0 "P4" H 5400 3350 50  0000 C CNN
 F 1 "USB_OTG" H 5075 3675 50  0000 C CNN
-F 2 "Custom:MOLEX_MICRO_USB_REVERSED" V 5025 3375 50  0001 C CNN
-F 3 "" V 5025 3375 50  0000 C CNN
-F 4 "y" H 5075 3475 60  0001 C CNN "Required"
+F 2 "Custom:AMPHENOL_MICRO_USB_REVERSED" V 5025 3375 50  0001 C CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/1404/0900766b81404a72.pdf" H 5025 3375 50  0001 C CNN
+F 4 "Reversed Micro USB Socket" H 5075 3475 60  0001 C CNN "Description"
+F 5 "Amphenol" H 5075 3475 60  0001 C CNN "Manufacturer Name (MFN)"
+F 6 "10103592-0001LF" H 5075 3475 60  0001 C CNN "Manfr. Part Number (MFP)"
+F 7 "https://uk.rs-online.com/web/p/micro-usb-connectors/7142334/" H 5075 3475 60  0001 C CNN "Source1"
+F 8 "Socket is reversed - see datasheet" H 5075 3475 60  0001 C CNN "Notes"
+F 9 "y" H 5075 3475 60  0001 C CNN "Required"
 	1    5075 3475
 	0    -1   1    0   
 $EndComp
